@@ -13,15 +13,14 @@ It's easy:
 
 1. Add the class to your project
 1. Change the class namespace to your project's namespace
-1. Change the name of the class if it offends you or your employer
 1. Create an instance of the class, passing the path to your INI file to the constructor
-1. Retrieve settings using the `Get(section, key, defaultIfMissing = null)` method
+1. Retrieve settings using the `Get(section, key, valueIfMissing = null)` method
 
 That's all you have to do.
 
 ## Notes
 
-* INI files should be UTF-8 encoded. If you need to use a different encoding like Shift-JIS (don't ask...), just pass your desired encoding to the constructor.
+* The default encoding is UTF-8. If you need to use a different encoding like Shift-JIS or KOI8-R, just pass your desired encoding to the constructor.
 * The INI file is cached in memory after it has been read. To reload it, just create a new instance of the class.
 * The `Get` method will return null if the section or the key does not exist. Notably, it will never throw an exception as long as the `section` and `key` method parameters are not `null`.
 * The `Get` method returns strings. Since INI files are usually designed to be edited by users, you are responsible for validating the data (e.g.  `int.TryParse(...)` for numbers, etc.).
