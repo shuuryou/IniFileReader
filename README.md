@@ -4,7 +4,7 @@ IniFileReader is a tiny .NET INI file parser written in C#. I wrote it for perso
 
 Like most things, I created this out of frustration. Back when I needed a cross-platform INI parser, a web search for "C# ini parser" returned lots of projects with thousands of lines of code, interfaces, classes, dependencies on logging libraries, etc. All for parsing a *text file*. No wonder all software today is so bloated.
 
-IniFileReader is a single, self-contained class with just a constructor and one method. It doesn't have any dependencies and should work with essentially any version of the .NET Framework. I've tested it with .NET Framework 2.0 and newer. The entire code base is tiny. In fact, the filesize of this README file is larger than the file size of the class.
+IniFileReader is a single, self-contained class with just a constructor and one method. It doesn't have any dependencies and should work with essentially any version of the .NET Framework. I've tested it with .NET Framework 2.0 and newer. The entire code base is tiny. In fact, the filesize of this README file was larger than the file size of the class, before documentation comments were added.
 
 I place this work in the public domain. Do what you want with it.
 
