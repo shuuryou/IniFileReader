@@ -15,7 +15,7 @@ namespace ChangeMe
 		private readonly Encoding m_Encoding;
 
 		/// <summary>
-		/// Creates a new instance of the IniFileReader class.
+		/// Creates a new instance of the IniFileWriter class.
 		/// </summary>
 		/// <param name="encoding">
 		/// The text encoding to use when reading the INI file. Defaults to 
